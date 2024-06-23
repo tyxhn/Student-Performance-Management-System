@@ -446,8 +446,8 @@ void Changedata(Slist *&L1, Slist *&L2) {
 			//修改谁的，输入这个名字，我们得知道在哪里，这里就又用到第三个问题
 			for (int i = 0; i < na->length; i++) {
 				char* add1, * add2;
-				add1 = strstr(L1->data[i].no, b);
-				add2 = strstr(L1->data[i].name, b);
+				add1 = strstr(na->data[i].no, b);
+				add2 = strstr(na->data[i].name, b);
 				if (add1 == NULL && add2 == NULL)//没找到这个人就继续
 					continue;
 				else { //找到了
